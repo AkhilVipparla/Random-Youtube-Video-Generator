@@ -20,8 +20,8 @@
             const maxResults = 30;
 
             if (searchQuery.trim() === "") {
-                alert("Please enter a search term.");
-                return;
+                const searchQuery = " ";
+            const maxResults = 30;
             }
 
             fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&q=${searchQuery}&type=video&maxResults=${maxResults}&key=${apiKey}`)
